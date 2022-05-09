@@ -1,4 +1,4 @@
-FROM postgres:14.1
+FROM postgres:14.2
 
 # --------------------
 # install timescaledb
@@ -53,7 +53,7 @@ RUN pgtapDependencies="git \
     && apt-get update \
     && apt-get install -y --no-install-recommends ${pgtapDependencies} \
     && cd /tmp \
-    && git clone git://github.com/theory/pgtap.git \
+    && git clone https://github.com/theory/pgtap.git \
     && cd pgtap \
     && git checkout tags/$PGTAP_VERSION \
     && make install \
