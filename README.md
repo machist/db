@@ -24,7 +24,7 @@ docker run --rm -d \
   --name machist-db \
   -p 5432:5432 \
   -e POSTGRES_PASSWORD=postgres \
-  ghcr.io/machist/db:latest:latest
+  ghcr.io/machist/db:latest
 ````
 
 ## database (sample)
